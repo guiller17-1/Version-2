@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disponibilidad de productos</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body><main class="card">
+<header><span class="eyebrow">CATALOGO EN LINEA</span><h1>Consulta de disponibilidad</h1><p>Busca por marca, por producto o combina ambos campos.</p></header>
+<section class="form">
+<label for="marca">Marca <small>(opcional)</small></label>
+<div class="combo"><input id="marca" autocomplete="off" placeholder="Escribe o selecciona una marca"><div id="marcas" class="options"></div></div>
+<label for="producto">Producto</label>
+<div class="combo"><input id="producto" autocomplete="off" placeholder="Empieza a escribir el producto"><div id="productos" class="options"></div></div>
+<div id="resultado" class="result hidden" aria-live="polite"><div class="dot"></div><div><span>Disponibilidad</span><strong id="estado"></strong><p id="seleccion"></p></div></div>
+<button id="limpiar" type="button">Limpiar consulta</button>
+<p id="nota" class="note">Cargando inventario...</p>
+</section></main><script src="/static/app.js"></script></body></html>
