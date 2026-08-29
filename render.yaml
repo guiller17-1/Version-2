@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: disponibilidad-productos
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ONEDRIVE_URL
+        sync: false
+      - key: CACHE_SECONDS
+        value: 60
